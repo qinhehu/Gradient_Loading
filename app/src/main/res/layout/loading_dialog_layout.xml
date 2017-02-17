@@ -4,14 +4,14 @@
     android:layout_height="wrap_content"
     android:background="@drawable/oval_white">
     <LinearLayout
-        android:layout_width="80dp"
-        android:layout_height="80dp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
         android:background="@drawable/oval_white"
         android:gravity="center">
         <ImageView
             android:id="@+id/img_Loading_Dialog"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
             android:background="@drawable/oval_gradient" />
     </LinearLayout>
 </LinearLayout>

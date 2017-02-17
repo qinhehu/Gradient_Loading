@@ -62,16 +62,16 @@ public class CircleLoadingDrawable extends Drawable {
         mPaint.setColor(mCurrentColor);
         mPaint.setStyle(Paint.Style.STROKE);
         mPaint.setStrokeJoin(Paint.Join.ROUND);
-        mPaint.setStrokeWidth(DisplayUtils.dip2px(22));
+        mPaint.setStrokeWidth(DisplayUtils.dip2px(65));
         canvas.drawArc(arcBounds, mStartAngle, mSweepAngle, false, mPaint);
 
         mPaint.reset();
         mPaint.setAntiAlias(true);
         //画白圆,作为空心圆使用
-        arcBounds.set(DisplayUtils.dip2px(10),
-                DisplayUtils.dip2px(10),
-                getBounds().width() - DisplayUtils.dip2px(10),
-                getBounds().height() - DisplayUtils.dip2px(10));
+        arcBounds.set(DisplayUtils.dip2px(30),
+                DisplayUtils.dip2px(30),
+                getBounds().width() - DisplayUtils.dip2px(30),
+                getBounds().height() - DisplayUtils.dip2px(30));
         mPaint.setColor(mCurrentColor);
         mPaint.setStyle(Paint.Style.FILL);
         canvas.drawArc(arcBounds, 0, 360, true, mPaint);
